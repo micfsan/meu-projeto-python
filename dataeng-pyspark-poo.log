@@ -1,0 +1,86 @@
+2026-04-01 17:53:42 - root - INFO - Logging configurado.
+2026-04-01 17:56:15 - root - INFO - Logging configurado.
+2026-04-01 17:56:21 - __main__ - ERROR - Erro durante a execução do pipeline: name 'logger' is not defined
+2026-04-01 17:56:21 - py4j.clientserver - INFO - Closing down clientserver connection
+2026-04-01 17:57:32 - __main__ - ERROR - Erro durante a execução do pipeline: name 'logger' is not defined
+2026-04-01 17:57:32 - py4j.clientserver - INFO - Closing down clientserver connection
+2026-04-01 18:00:24 - MAIN - INFO - Iniciando App: Analise de Pedidos
+2026-04-01 18:00:29 - MAIN - INFO - Sessão Spark criada com sucesso.
+2026-04-01 18:00:29 - MAIN - ERROR - Falha na execução: name 'logger' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/environment/data-engineering-pyspark/src/main.py", line 35, in main
+    pipeline.run(config=config)
+  File "/home/ubuntu/environment/data-engineering-pyspark/src/pipeline/pipeline.py", line 20, in run
+    logger.info("Pipeline iniciado...")
+NameError: name 'logger' is not defined
+2026-04-01 18:00:30 - MAIN - INFO - Sessão Spark encerrada.
+2026-04-01 18:00:30 - py4j.clientserver - INFO - Closing down clientserver connection
+2026-04-01 18:03:06 - root - INFO - Logging configurado.
+2026-04-01 18:03:11 - py4j.clientserver - INFO - Closing down clientserver connection
+2026-04-01 18:03:45 - root - INFO - Logging configurado.
+2026-04-01 18:03:50 - py4j.clientserver - INFO - Closing down clientserver connection
+2026-04-01 18:20:20 - root - INFO - Logging configurado.
+2026-04-01 18:20:25 - pipeline.pipeline - INFO - Pipeline iniciado...
+2026-04-01 18:20:25 - pipeline.pipeline - INFO - Abrindo o dataframe de clientes
+2026-04-01 18:20:25 - pipeline.pipeline - INFO - Obtido o path de clientes: ./data-engineering-pyspark/data/input/dataset-json-clientes/data/clientes.json.gz
+2026-04-01 18:20:29 - pipeline.pipeline - INFO - Abrindo o dataframe de pedidos
+2026-04-01 18:20:29 - pipeline.pipeline - INFO - 
+        Obtidos os seguintes parâmetros de pedidos: 
+        - path: ./data-engineering-pyspark/data/input/datasets-csv-pedidos/data/pedidos/
+        - compression: gzip
+        - header: True
+        - separator: ;
+        
+2026-04-01 18:20:29 - pipeline.pipeline - INFO - Adicionando a coluna valor_total
+2026-04-01 18:20:30 - pipeline.pipeline - INFO - Calculando o valor total de pedidos por cliente e filtrar os 10 maiores
+2026-04-01 18:20:33 - pipeline.pipeline - INFO - Fazendo a junção dos dataframes
+2026-04-01 18:20:35 - pipeline.pipeline - INFO - Escrevendo o resultado em parquet
+2026-04-01 18:20:35 - pipeline.pipeline - INFO - Obtido o path de saída: ./data-engineering-pyspark/data/output/pedidos_por_cliente
+2026-04-01 18:20:37 - pipeline.pipeline - INFO - Pipeline concluído com sucesso!
+2026-04-01 18:20:38 - py4j.clientserver - INFO - Closing down clientserver connection
+2026-04-01 18:39:05 - root - INFO - Logging configurado.
+2026-04-01 18:39:05 - root - ERROR - FALHA CRÍTICA NO PIPELINE: name 'app_name' is not defined
+2026-04-01 18:39:27 - root - INFO - Logging configurado.
+2026-04-01 18:39:27 - root - ERROR - FALHA CRÍTICA NO PIPELINE: name 'app_name' is not defined
+2026-04-01 18:40:00 - root - INFO - Logging configurado.
+2026-04-01 18:40:00 - root - ERROR - FALHA CRÍTICA NO PIPELINE: name 'app_name' is not defined
+2026-04-01 18:46:37 - root - INFO - Logging configurado.
+2026-04-01 18:46:43 - pipeline.pipeline - INFO - Pipeline iniciado...
+2026-04-01 18:46:43 - pipeline.pipeline - INFO - Abrindo o dataframe de clientes
+2026-04-01 18:46:43 - pipeline.pipeline - INFO - Obtido o path de clientes: ./data-engineering-pyspark/data/input/dataset-json-clientes/data/clientes.json.gz
+2026-04-01 18:46:47 - pipeline.pipeline - INFO - Abrindo o dataframe de pedidos
+2026-04-01 18:46:47 - pipeline.pipeline - INFO - 
+        Obtidos os seguintes parâmetros de pedidos: 
+        - path: ./data-engineering-pyspark/data/input/datasets-csv-pedidos/data/pedidos/
+        - compression: gzip
+        - header: True
+        - separator: ;
+        
+2026-04-01 18:46:48 - pipeline.pipeline - INFO - Adicionando a coluna valor_total
+2026-04-01 18:46:48 - pipeline.pipeline - INFO - Calculando o valor total de pedidos por cliente e filtrar os 10 maiores
+2026-04-01 18:46:51 - pipeline.pipeline - INFO - Fazendo a junção dos dataframes
+2026-04-01 18:46:53 - pipeline.pipeline - INFO - Escrevendo o resultado em parquet
+2026-04-01 18:46:53 - pipeline.pipeline - INFO - Obtido o path de saída: ./data-engineering-pyspark/data/output/pedidos_por_cliente
+2026-04-01 18:46:56 - pipeline.pipeline - INFO - Pipeline concluído com sucesso!
+2026-04-01 18:46:56 - root - INFO - Sessão Spark finalizada.
+2026-04-01 18:46:56 - py4j.clientserver - INFO - Closing down clientserver connection
+2026-04-01 19:24:40 - root - INFO - Logging configurado.
+2026-04-01 19:24:46 - pipeline.pipeline - INFO - Pipeline iniciado...
+2026-04-01 19:24:46 - pipeline.pipeline - INFO - Abrindo o dataframe de clientes
+2026-04-01 19:24:46 - pipeline.pipeline - INFO - Obtido o path de clientes: ./data-engineering-pyspark/data/input/dataset-json-clientes/data/clientes.json.gz
+2026-04-01 19:24:49 - pipeline.pipeline - INFO - Abrindo o dataframe de pedidos
+2026-04-01 19:24:49 - pipeline.pipeline - INFO - 
+        Obtidos os seguintes parâmetros de pedidos: 
+        - path: ./data-engineering-pyspark/data/input/datasets-csv-pedidos/data/pedidos/
+        - compression: gzip
+        - header: True
+        - separator: ;
+        
+2026-04-01 19:24:50 - pipeline.pipeline - INFO - Adicionando a coluna valor_total
+2026-04-01 19:24:51 - pipeline.pipeline - INFO - Calculando o valor total de pedidos por cliente e filtrar os 10 maiores
+2026-04-01 19:24:53 - pipeline.pipeline - INFO - Fazendo a junção dos dataframes
+2026-04-01 19:24:55 - pipeline.pipeline - INFO - Escrevendo o resultado em parquet
+2026-04-01 19:24:55 - pipeline.pipeline - INFO - Obtido o path de saída: ./data-engineering-pyspark/data/output/pedidos_por_cliente
+2026-04-01 19:24:57 - pipeline.pipeline - INFO - Pipeline concluído com sucesso!
+2026-04-01 19:24:57 - root - INFO - Sessão Spark finalizada.
+2026-04-01 19:24:57 - py4j.clientserver - INFO - Closing down clientserver connection
