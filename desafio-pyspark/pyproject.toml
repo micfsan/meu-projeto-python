@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataeng_pyspark_data_pipeline"
+version = "0.1.0"
+description = "Pipeline de dados estruturado para o desafio PySpark"
+readme = "README.md"
+authors = [{ name="Michele", email="michele@exemplo.com" }]
+requires-python = ">=3.8"
+dependencies = [
+    "pyspark>=3.0.0",
+    "pyyaml>=6.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+# Isso garante que ele encontre os pacotes dentro da pasta src
+packages = {find = {where = ["src"]}}
